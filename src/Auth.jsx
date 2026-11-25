@@ -33,7 +33,7 @@ export default function Auth({ onLogin }) {
         if (data.session) {
           onLogin(data.session.user);
         } else {
-          setMessage("Account created! Please verify your email, then log in.");
+          setMessage("Account created!");
         }
       } else {
         const { data, error } =
